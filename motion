@@ -1,0 +1,23 @@
+import { motion } from "framer-motion";
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden py-24 px-6 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-6xl font-bold mb-6"
+        >
+          Your Career on Autopilot
+        </motion.h1>
+        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+          While bots fail, our Agents prevail. The world’s first Autonomous Career Agency for go‑getters.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button size="lg">Activate Hunter</Button>
+          <Button size="lg" variant="outline">View Architecture</Button>
+        </div>
+      </section>
